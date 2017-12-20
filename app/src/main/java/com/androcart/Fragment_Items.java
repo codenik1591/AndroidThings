@@ -49,10 +49,10 @@ public class Fragment_Items extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     public Fragment_Items() {
-        // Required empty public constructor
+        
     }
 
-    // TODO: Rename and change types and number of parameters
+
     public static Fragment_Items newInstance() {
         Fragment_Items fragment = new Fragment_Items();
         return fragment;
@@ -82,12 +82,6 @@ public class Fragment_Items extends Fragment {
         return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-   /* public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }*/
 
     @Override
     public void onAttach(Context context) {
@@ -116,23 +110,9 @@ public class Fragment_Items extends Fragment {
             getCategoryTask.cancel(true);
     }
 
-    /*@Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-    }*/
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
+
         void onFragmentInteraction(Items item, int action);
         void onCategoryUpdated(ArrayList<CategoryCount> count);
     }
@@ -195,12 +175,12 @@ public class Fragment_Items extends Fragment {
             StringBuilder builder = new StringBuilder();
             try {
                 URL url = new URL("http://192.168.1.3:9000/pos/get_item/"+arg[0]);
-                //URL url = new URL("http://192.168.1.3:9000/pos");
+     
                 URLConnection connection = url.openConnection();
                 connection.setRequestProperty("User-Agent","Mozilla/5.0 ( compatible ) ");
                 connection.setRequestProperty("Accept","*/*");
                 connection.setRequestProperty("content-type","application/json");
-                //connection.setDoOutput(true);
+       
                 content = new BufferedInputStream(connection.getInputStream());
                 reader = new BufferedReader(new InputStreamReader(content,"UTF-8"));
                 String line;
@@ -426,12 +406,12 @@ public class Fragment_Items extends Fragment {
             StringBuilder builder = new StringBuilder();
             try {
                 URL url = new URL("http://192.168.1.3:9000/pos/get_category_stat/"+sales_id);
-                //URL url = new URL("http://192.168.1.3:9000/pos");
+               
                 URLConnection connection = url.openConnection();
                 connection.setRequestProperty("User-Agent","Mozilla/5.0 ( compatible ) ");
                 connection.setRequestProperty("Accept","*/*");
                 connection.setRequestProperty("content-type","application/json");
-                //connection.setDoOutput(true);
+             
                 content = new BufferedInputStream(connection.getInputStream());
                 reader = new BufferedReader(new InputStreamReader(content,"UTF-8"));
                 String line;

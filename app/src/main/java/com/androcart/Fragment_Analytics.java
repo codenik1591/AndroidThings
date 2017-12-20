@@ -26,10 +26,9 @@ public class Fragment_Analytics extends Fragment {
 
 
     public Fragment_Analytics() {
-        // Required empty public constructor
+
     }
 
-    // TODO: Rename and change types and number of parameters
     public static Fragment_Analytics newInstance() {
         Fragment_Analytics fragment = new Fragment_Analytics();
         return fragment;
