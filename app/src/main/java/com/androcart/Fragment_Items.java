@@ -32,14 +32,6 @@ import java.util.ArrayList;
 import static android.content.ContentValues.TAG;
 import static com.google.android.gms.internal.zzagz.runOnUiThread;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Fragment_Items.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Fragment_Items#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class Fragment_Items extends Fragment {
 
     private ArrayList<Items> itemModels;

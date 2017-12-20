@@ -1,8 +1,6 @@
 package com.androcart;
 
-/**
- * Created by Avinash on 10/30/2017.
- */
+
 
 public class CategoryCount {
 

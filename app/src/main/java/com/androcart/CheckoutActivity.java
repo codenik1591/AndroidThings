@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-/**
- * Created by Avinash on 10/30/2017.
- */
 
 public class CheckoutActivity extends Activity {
 

@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Avinash on 10/30/2017.
- */
 
 public class Fragment_Analytics extends Fragment {
 

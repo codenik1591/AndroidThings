@@ -14,9 +14,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by Avinash on 10/30/2017.
- */
 
 public class CategoryAdapter extends ArrayAdapter<CategoryCount> {
 

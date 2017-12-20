@@ -1,8 +1,5 @@
 package com.androcart;
 
-/**
- * Created by Avinash on 10/28/2017.
- */
 
 public class Items {
 

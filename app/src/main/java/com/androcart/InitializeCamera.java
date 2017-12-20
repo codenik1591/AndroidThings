@@ -17,9 +17,6 @@ import java.util.Collections;
 import static android.content.ContentValues.TAG;
 import static android.content.Context.CAMERA_SERVICE;
 
-/**
- * Created by Avinash on 10/21/2017.
- */
 
 public class InitializeCamera {
 
