@@ -26,7 +26,6 @@ public class CategoryAdapter extends ArrayAdapter<CategoryCount> {
         TextView txtCategory;
     }
 
-
     public CategoryAdapter(ArrayList<CategoryCount> data, Context context){
         super(context, R.layout.layout_list_cat_item, data);
         this.dataSet = data;
@@ -55,7 +54,6 @@ public class CategoryAdapter extends ArrayAdapter<CategoryCount> {
             viewHolder = (CategoryAdapter.ViewHolder) convertView.getTag();
             result=convertView;
         }
-
         Random rand = new Random();
         int r = rand.nextInt(255);
         int g = rand.nextInt(255);
@@ -67,5 +65,4 @@ public class CategoryAdapter extends ArrayAdapter<CategoryCount> {
         viewHolder.txtCategory.setText(itemsModel.getCategory() + " - " + (int)(Double.parseDouble(itemsModel.getCount())));
         return result;
     }
-
 }

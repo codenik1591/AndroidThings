@@ -1,5 +1,6 @@
 package com.androcart;
 
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
@@ -32,5 +33,4 @@ public class SplashActivity extends Activity {
         }.start();
 
     }
-
 }
